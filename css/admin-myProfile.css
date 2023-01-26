@@ -1,0 +1,142 @@
+/*------ My Profile -------*/
+.adminMyProfileContainer {
+    grid-column: 4 / span 5 ;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------ Business Card -------*/
+.business-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2rem;
+}
+
+.business-card, .editMyProfile {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #ebf8dd;
+    color: #1D2D44;
+    padding: 20px;
+}
+
+.business-card .img-profile {
+    width: 200px;
+}
+
+.business-card .intro {
+    text-align: center;
+}
+
+.business-card .intro .intro-text{
+    margin: 0.75rem auto;
+}
+
+.business-card .intro-left {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.business-card .intro-left span {
+    font-weight: bold;
+}
+
+/*------ Update My Profile -------*/
+.editMyProfile{
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
+
+.editMyProfile h3 {
+    margin-top: 0px;
+}
+
+.editMyProfile form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,2rem) 5rem repeat(3,2rem) 4rem;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+}
+
+.editMyProfile form .item1,
+.editMyProfile form .item2{
+    grid-row: 1;
+}
+.editMyProfile form .item3,
+.editMyProfile form .item4{
+    grid-row: 2;
+}
+.editMyProfile form .item5,
+.editMyProfile form .item11{
+    grid-row: 3;
+}    
+.editMyProfile form .item6{
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}   
+.editMyProfile form .item7{
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+.editMyProfile form .item8{
+    grid-row: 6;
+    grid-column: 1 / span 2;
+}
+.editMyProfile form .item9{
+    grid-row: 7;
+    grid-column: 1 / span 2;
+}
+.editMyProfile form .item10{
+    grid-row: 8;
+    grid-column: 1 / span 2;
+}
+
+.editMyProfile form .item1 label,
+.editMyProfile form .item2 label,
+.editMyProfile form .item3 label,
+.editMyProfile form .item4 label,
+.editMyProfile form .item5 label,
+.editMyProfile form .item7 label,
+.editMyProfile form .item8 label,
+.editMyProfile form .item9 label {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+.editMyProfile form .item1 label,
+.editMyProfile form .item2 label,
+.editMyProfile form .item3 label,
+.editMyProfile form .item4 label,
+.editMyProfile form .item5 label{
+    width: 55px;
+}
+
+.editMyProfile form .item7 label,
+.editMyProfile form .item8 label,
+.editMyProfile form .item9 label{
+    width: 150px;
+}
+
+.editMyProfile form input[type="submit"]
+{
+    display: block;
+
+    background-color: var(--iwp-blue-2);
+    color: white;
+    text-decoration: none;
+
+    width: 50%;
+    height: 2rem;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.editMyProfile form .item10{
+    align-self: center;
+}

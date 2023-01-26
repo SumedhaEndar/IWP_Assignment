@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This Part need to always exist when needed the navbar and the footer -->
+    <script src="https://kit.fontawesome.com/cc2ad1b11c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Raleway:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Alert!!! The href to the css may need to change a bit -->
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="../css/others.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/buttonLikeAnchor.css">
+    <link rel="stylesheet" href="../css/dashboard-tabs.css">
+    <link rel="stylesheet" href="../css/admin-leftNav.css">
+    <link rel="stylesheet" href="../css/admin-myProfile.css">
+    <!----------------------------------------------------------------------------->
+    <title>Admin | My Profile</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo-text">IWP</h1>
+            <nav class="nav-text">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Home</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Women</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Men</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Girls</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Boys</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon"> 
+                <div>
+                    <a href="#"><i class="fa-solid fa-heart fa-lg"></i></a>
+                    <span class="nav-text">12</span>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+                    <span class="nav-text">0</span>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-user fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside class="left-dashNav">
+            <div class="admin-head">
+                <img src="../assests/dongyu.jpeg">
+                <h3 class="section-heading">Tan Dong Yu</h3>
+            </div>
+            <div class="sidenav nav-text">
+                <a href="#" class="active">My Profile</a>
+                <a href="#">Employee List</a>
+                <a href="#">Add Employee</a>
+                <a href="#">Product List</a>
+                <a href="#">Add Product</a>
+                <a href="#">Order List</a>
+                <a href="#">Feedback List</a>
+            </div>
+        </aside>
+        <div class="adminMyProfileContainer">
+            <div class="business-card">
+                <img class="img-profile" src="../assests/dongyu.jpeg">
+                <div class="intro">
+                    <h3 class="intro-text">Tan Dong Yu</h3>
+                    <p class="intro-text">Financial Manager</p>
+                    <h4 class="intro-text">1211200835</h4>
+                    <div class="intro-left">
+                        <p><span>Mobile:</span> 017-9544877</p>
+                        <p><span>Email:</span> 1211200835@iwp.com</p>
+                        <p><span>Address:</span> <br>Persiaran Multimedia, 63100 Cyberjaya, Selangor </p>
+                    </div>
+                </div>
+            </div>
+            <div class="editMyProfile">
+                <h3>Update My Profile</h3>
+                <form name="updateMyProfileAdmin" method="post" action="">
+                    <div class="item1">
+                        <label>ID:</label>
+                        <input type="text" name="EmpID" value="1211200835" disabled>
+                    </div>
+                    <div class="item2">
+                        <label>Email:</label>
+                        <input type="email" name="EmpEmail" value="1211200835@iwp.com" disabled>
+                    </div>
+                    <div class="item3">
+                        <label>Name:</label>
+                        <input type="text" name="EmpName" value="Tan Dong Yu" disabled>
+                    </div>
+                    <div class="item4">
+                        <label>Position:</label>
+                        <input type="text" name="EmpPos" value="Financial Manager" disabled>
+                    </div>
+                    <div class="item5">
+                        <label for="EmpPhone">Mobile:</label>
+                        <input type="tel" name="EmpPhone" id="EmpPhone" value="017-9544877">
+                    </div>
+                    <div class="item6">
+                        <label for="EmpAddress">Address:</label><br>
+                        <textarea id="EmpAddress" name="EmpAddress" rows="3" cols="60">Persiaran Multimedia, 63100 Cyberjaya, Selangor</textarea>
+                    </div>
+                    <div class="item7">
+                        <label for="EmpPassword">Current Password:</label>
+                        <input type="password" name="EmpPassword" id="EmpPassword" value="123456">
+                    </div>
+                    <div class="item8">
+                        <label for="NewPassword">New Password:</label>
+                        <input type="password" name="NewPassword" id="NewPassword" value="567890">
+                    </div>
+                    <div class="item9">
+                        <label for="ConfirmPassword">Confirm Password:</label>
+                        <input type="password" name="ConfirmPassword" id="ConfirmPassword" value="567890">
+                    </div>
+                    <input class="item10" type="submit" value="Update My Profile">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-layout-1">
+                <div class="footer-layout-1-sub1">
+                    <h1 class="logo-text">IWP</h1>
+                </div>
+                <div class="footer-layout-1-sub2">
+                    <h4 class="footer-heading">Category</h4>
+                    <ul class="footer-text footer-list">
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Women</a></li>
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Men</a></li>
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Girls</a></li>
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Boys</a></li>
+                    </ul>
+                </div>
+                <div class="footer-layout-1-sub2">
+                    <h4 class="footer-heading">Information</h4>
+                    <ul class="footer-text footer-list">
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">About Us</a></li>
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-layout-1-sub2">
+                    <h4 class="footer-heading">Help</h4>
+                    <ul class="footer-text footer-list">
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">FAQ</a></li>
+                        <li class="footer-list-item"><a href="#" class="footer-list-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-layout-1-sub3">
+                    <a class="buttonLike-MyAccount footer-heading" href="#">My Account</a>
+                </div>
+            </div>
+            <hr style="
+                border: none; 
+                border-top: 1px solid white;
+                margin: 1.5rem 0 1rem 0;">
+            <div class="footer-layout-2">
+                <small class="small-text">&copy; I.W.P 2022. We love our customer!</small>
+                <div class="footer-layout-2-sub1">
+                    <small class="small-text">Follow Us: </small>
+                    <a href="https://www.facebook.com/" class="follow-us-link">
+                        <img src="../assests/facebook-icon.svg" alt="follow us on facebook" class="follow-us-icon">
+                    </a>
+                    <a href="https://www.facebook.com/" class="follow-us-link">
+                        <img src="../assests/twitter-icon.svg" alt="follow us on twitter" class="follow-us-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

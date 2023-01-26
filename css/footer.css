@@ -1,0 +1,65 @@
+footer {
+    padding: 0.5rem 0.25rem 1.5rem 0.25rem;
+    background-color: var(--iwp-red-1);
+    
+    /* If the fixed is always at that position 
+        and block the content when scrolling, remove it. */
+    /* position: fixed;
+    width: 100%;
+    bottom: 0; */
+    /*--------------------------------------------------- */
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-layout-1 {
+    color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1.25fr 1.25fr 1.25fr 3fr;
+    column-gap: 1rem;
+    align-items: start;
+}
+
+.footer-layout-1-sub1 {
+    transform: translateY(10%);
+}
+
+.footer-layout-1-sub3 {
+    justify-self: end;
+    transform: translateY(40%);
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.75rem;
+}
+
+.footer-list-item {
+    margin-top: 0.35rem;
+}
+
+.footer-list-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-list-link:hover {
+    text-decoration: underline;
+}
+
+.footer-layout-2 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-layout-2-sub1 {
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}

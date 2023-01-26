@@ -1,0 +1,48 @@
+.hero-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-carousel-1 {
+    background-color: #F0DDE1;
+}
+
+.hero-carousel-1 img {
+    transform: translateX(5%);
+}
+
+.hero-carousel-2,
+.hero-carousel-3 {
+    background-color: whitesmoke;
+}
+
+.hero-carousel-nav {
+    padding: 0.75rem 0;
+    display: flex;
+    justify-content: center;
+    /* column-gap: 0.25rem; */
+}
+
+.hero-carousel-nav .carousel-indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+.hero-item,
+.hero-item-hidden {
+    display: none;
+}
+
+.hero-item-visible {
+    display: flex;
+}
+
+.carousel-indicator.current-slide {
+    background-color: rgba(0, 0, 0, 1);
+}

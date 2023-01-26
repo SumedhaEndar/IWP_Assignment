@@ -1,0 +1,42 @@
+.productListContainer {
+    grid-column: 3 / span 8 ;
+    align-self: flex-start;
+    justify-self: center;
+}
+
+.productListTable {
+    height: 110vh;
+    padding: 20px;
+    background-color: #ebf8dd;
+    overflow-y: scroll;
+    margin-top: 2rem;
+}
+
+/* .productListTable */
+.productListTable table {
+    border-collapse: collapse;
+}
+
+.productListTable td, 
+.productListTable th {
+    padding: 0.5em;
+    text-align: center;
+    border: solid 1pt black;
+}
+
+.productListTable table .big {
+    width: 150px;
+}
+
+.productListTable table .medium {
+    width: 70px;
+}
+
+.productListTable table .small {
+    width: 40px;
+}
+
+.productListTable thead {
+    background-color: #5CA4A9;
+    color: #ebf8dd;
+}

@@ -1,0 +1,49 @@
+.tabs-button-section{
+    background-color: var(--iwp-pink-1);
+    padding: 1.25rem 0 0.5rem 0;
+}
+
+.tabs-button-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tabs-button-layout {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: space-around;
+}
+
+.tabs-button-layout button {
+    width: 150px;
+}
+
+.tabs-button {
+    background-color: var(--iwp-pink-1);
+    color: var(--iwp-red-1);
+    border: 2px solid var(--iwp-red-1);
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tabs-button:hover,
+.current-tabs {
+    background-color: var(--iwp-red-1);
+    color: white;
+}
+
+@media only screen and (max-width: 1190px) {
+    .tabs-button-container {
+      width: 90%;
+    }
+
+    .tabs-text {
+        font-size: 14px;
+    }
+
+    .tabs-button-layout button {
+        width: 170px;
+    }
+}

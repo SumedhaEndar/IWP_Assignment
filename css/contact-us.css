@@ -1,0 +1,110 @@
+
+.heading-contact-us
+{
+    font-size: 36px;
+    text-align: center;
+}
+
+.each-input
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.each-input-2
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.each-input-2 input
+{
+    width: 93%;
+}
+
+.each-input, .each-input-2
+{
+    padding-bottom: 10px;
+}
+
+label
+{
+    padding-bottom: 3px;
+}
+
+input
+{
+    width: 71%;
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid #00000080;
+}
+
+select
+{
+    width: 307px;
+    border-radius: 4px;
+    border: 1px solid #00000080;
+    height: 32px;
+    font-size: 24px;
+}
+
+.each-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section
+{
+    width: 50%;
+}
+
+.sec2
+{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+iframe
+{
+    height: 350px;
+    width: 510px;
+}
+
+span
+{
+    color:rgb(190, 22, 34);
+}
+
+textarea
+{
+    font-size: 24px;
+    width: 93%;
+    height: 300px;
+}
+
+.button
+{
+    border: 0;
+}
+
+.input
+{
+    width: 72%;
+}
+
+input[type="submit"] {
+    width: 25% !important;
+}

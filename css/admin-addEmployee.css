@@ -1,0 +1,59 @@
+.addEmployeeContainer {
+    grid-column: 4 / span 5 ;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.addEmployee {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: #ebf8dd;
+    color: #1D2D44;
+    padding: 20px;
+}
+
+.addEmployee h3 {
+    margin-top: 0px;
+}
+
+.addEmployee form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,2rem) 5rem 3rem;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
+}
+
+.addEmployee form .item1 label,
+.addEmployee form .item2 label,
+.addEmployee form .item3 label,
+.addEmployee form .item4 label,
+.addEmployee form .item5 label {
+    display: inline-block;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 55px;
+}
+
+.addEmployee form input[type="submit"]
+{
+    display: block;
+
+    background-color: var(--iwp-blue-2);
+    color: white;
+    text-decoration: none;
+
+    width: 200px;
+    height: 2rem;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addEmployee form .item6{
+    align-self: flex-end;
+}

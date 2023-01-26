@@ -1,0 +1,210 @@
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-section {
+    background-color: var(--iwp-pink-1);
+    padding: 0.5rem 0 0.75rem 0;
+    min-height: 80vh;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-item-container
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1.2rem;
+    margin: 0.75rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-item-img {
+    grid-column: span 2;
+    display: flex;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My Cart */
+.dashboard-item-img img{
+    width: 150px;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My Cart */
+.dashboard-item-details {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My Cart */
+.dashboard-item-details p {
+    margin: 0.5rem 0;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My Cart */
+.dashboard-item-price,
+.dashboard-item-qty {
+    text-align: center;
+    grid-column: span 1;
+}
+.dashboard-item-price p {
+    color: var(--iwp-red-1);
+}
+
+/* Dashboard : My Orders - My History */
+.dashboard-item-info 
+{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-item-info .status1,
+.dashboard-item-info .status2
+{
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+.dashboard-item-info .status1 
+{
+    background-color: var(--iwp-yellow-1);
+    color: #3F3C3C;
+}
+.dashboard-item-info .status2
+{
+    background-color: var(--iwp-green-1);
+    color: white;
+}
+
+/* Dashboard : My Wishlist */
+.dashboard-item-remove {
+    grid-column: span 1;
+    text-align: right;
+    color: var(--iwp-grey-2);
+    cursor: pointer;
+}
+.dashboard-item-addCart {
+    grid-column: span 1;
+    text-align: right;
+    color: var(--iwp-red-1);
+    cursor: pointer;
+}
+
+/* Dashboard : My Cart */
+.dashboard-item-howMany
+{
+    grid-column: span 2;
+}
+
+.add-items
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 14px;
+    transform: translateY(-15%);
+}
+
+.add-items button
+{
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-items p
+{
+    margin: 0px;
+}
+
+.dashboard-item-details .with-remove
+{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.item-details-remove
+{
+    color: var(--iwp-grey-2);
+    transform: translateY(15%);
+    cursor: pointer;
+}
+
+.dashboard-item-check
+{
+    grid-column: span 1;
+    border-left: 2px solid var(--iwp-grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-item-check input[type="checkbox"]
+{
+    width: 25px; 
+    height: 25px;
+}
+
+.dashboard-payment-info-container 
+{
+    background-color: whitesmoke;
+    margin: 0.75rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dashboard-payment-info
+{
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    color: var(--iwp-red-1);
+}
+
+.proceed-to-payment
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.proceed-to-payment button
+{
+    display: inline-block;
+    background-color: var(--iwp-blue-2);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin: 1rem 0.75rem;
+}
+
+.proceed-to-payment button:hover,
+.proceed-to-payment button:active {
+    background-color: var(--iwp-blue-1);
+}
+
+
+/* All */
+@media only screen and (max-width: 1190px) {
+    .dashboard-container {
+        width: 90%;
+    }
+
+    .dashboard-item-container
+    {
+        gap: 0.5rem;
+    }
+}

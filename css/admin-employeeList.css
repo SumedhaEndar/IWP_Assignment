@@ -1,0 +1,82 @@
+.EmployeeListContainer {
+    grid-column: 3 / span 8 ;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.EmployeeListTable {
+    height: 50vh;
+    padding: 20px;
+    background-color: #ebf8dd;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+}
+
+.EmployeeListTable table {
+    border-collapse: collapse;
+}
+
+.EmployeeListTable td, 
+.EmployeeListTable th {
+    padding: 0.5em;
+    text-align: center;
+    border: solid 1pt black;
+}
+
+.EmployeeListTable thead {
+    background-color: #5CA4A9;
+    color: #ebf8dd;
+}
+
+.EmployeeListTable a {
+    text-decoration: none;
+}
+
+.EmployeeListTable a:link,
+.EmployeeListTable a:visited {
+    color: blue;
+}
+
+/*------ Business Card -------*/
+.business-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2rem;
+}
+
+.business-card {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #ebf8dd;
+    color: #1D2D44;
+    padding: 20px;
+}
+
+.business-card .img-profile {
+    width: 200px;
+}
+
+.business-card .intro {
+    text-align: center;
+}
+
+.business-card .intro .intro-text{
+    margin: 0.75rem auto;
+}
+
+.business-card .intro-left {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.business-card .intro-left span {
+    font-weight: bold;
+}
+

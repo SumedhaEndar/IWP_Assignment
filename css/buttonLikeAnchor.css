@@ -1,0 +1,14 @@
+
+.buttonLike-MyAccount {
+    display: inline-block;
+    background-color: var(--iwp-blue-2);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.buttonLike-MyAccount:hover,
+.buttonLike-MyAccount:active {
+    background-color: var(--iwp-blue-1);
+}

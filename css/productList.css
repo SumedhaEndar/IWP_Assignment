@@ -1,0 +1,119 @@
+.mainpage-heading {
+    font-family: Roboto;
+    text-align: center;
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    max-width: 200px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 2rem;
+}
+
+.dropdown-container {
+    margin-top: 40px;
+    grid-column: 1 / span 2;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown a {
+  background-color: var(--iwp-pink-2);
+  color: #f5f5f5;
+  border: 1px solid #c4c4c4;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+    background-color: var(--iwp-red-1);
+    color: white;
+}
+
+.card-container {
+    grid-column: 3 / span 8 ;
+    align-self: flex-start;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    max-width: 200px;
+    /* text-align: center; */
+    font-family: arial;
+    font-size: 0.85rem;
+    margin: 0.5rem;
+}
+
+.card a,
+.card:visited a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--iwp-pink-1);
+}
+
+.detail-name {
+    align-self: start;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.detail-price {
+    color: var(--iwp-red-1);
+    align-self: start;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.pagenumber-container {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+.pagenumber {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    text-decoration-line: none;
+}
+
+/* make the card container responsive */
+@media screen and (max-width: 1200px) {
+    .cards {
+      grid-template-columns: auto auto auto;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cards {
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cards {
+      grid-template-columns: auto;
+    }
+  }

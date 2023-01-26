@@ -1,0 +1,103 @@
+/* --------- Font Family ----------- */
+:root {
+    --logo-font: 'Raleway', sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+    --text-font: 'Inter', sans-serif;
+}
+/* -------------------------------- */
+
+
+/* ------------- Logo ------------- */
+.logo-text {
+    font-size: 26px;
+    font-family: var(--logo-font);
+    font-weight: 600;
+}
+/* ------------------------------- */
+
+
+/* ----------- Heading ----------- */
+.heading,
+.section-heading,
+.card-heading,
+.footer-heading {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 36px;
+}
+
+.section-heading {
+    font-size: 26px; 
+}   
+
+.card-heading {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.footer-heading{
+    font-size: 16px;
+}
+/* ---------------------------------- */
+
+
+/* -------------- Text ------------- */
+.card-text,
+.footer-text,
+.label-text,
+.nav-text,
+.small-text {
+    font-family: var(--text-font);
+}
+
+.card-text,
+.label-text {
+    font-size: 14px;
+    font-weight: 500;
+} 
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tabs-text,
+.nav-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.small-text {
+    font-size: 14px;
+    font-weight: 300;
+}
+/* ---------------------------------- */
+
+
+
+/*--------- Dashboard Text ----------  */
+.dashboard-text-1,
+.dashboard-text-2,
+.dashboard-text-3 {
+    font-family: var(--text-font);
+}
+
+.dashboard-text-1 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.dashboard-text-2{
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+
+.dashboard-text-3 
+{
+    font-size: 20px;
+    font-weight: 700;
+}

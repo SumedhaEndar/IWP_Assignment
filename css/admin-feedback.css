@@ -1,0 +1,84 @@
+/*------- Feedback List -------*/
+.feedbackListContainer {
+    grid-column: 3 / span 8 ;
+    align-self: flex-start;
+    justify-self: center;
+    display: flex;
+}
+
+.feedbackListTable {
+    height: 110vh;
+    padding: 20px;
+    background-color: #ebf8dd;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+}
+
+.feedbackListTable table {
+    border-collapse: collapse;
+}
+
+.feedbackListTable td, 
+.feedbackListTable th {
+    padding: 0.5em;
+    text-align: center;
+    border: solid 1pt black;
+}
+
+.feedbackListTable a {
+    text-decoration: none;
+}
+
+.feedbackListTable a:link,
+.feedbackListTable a:visited {
+    color: blue;
+}
+
+.feedbackListTable thead {
+    background-color: #5CA4A9;
+    color: #ebf8dd;
+}
+
+
+/*------- Feedback Details -------*/
+.feedbackDetailsContainer {
+    grid-column: 4 / span 6 ;
+    align-self: flex-start;
+}
+
+.feedbackDetails {
+    height: 110vh;
+    background-color: #ebf8dd;
+    padding: 1.25rem 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.feedbackDetails h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.feedbackDetails p {
+    text-align: justify;
+}
+
+.feedbackDetails span {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.feedbackDetails .msg {
+    display: flex;
+}
+
+.feedbackDetails .msg p {
+    margin-top: 0;
+}

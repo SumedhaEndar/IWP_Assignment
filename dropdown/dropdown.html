@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc2ad1b11c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Raleway:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/text.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="../css/others.css">
+    <link rel="stylesheet" href="dropdown.css">
+    
+    <title>Navbar</title>
+
+</head>
+
+<body>
+	
+	<header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo-text">IWP</h1>
+
+            <nav class="nav-text">
+                <ul class="nav-list">
+
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">Home</a>
+                    </li>
+
+                    <li class="nav-list-item">
+                        <a href="#" class="btn nav-list-link" onmouseover=show_list1()>Women</a>
+                        <ul id="womenList" class="menu label-text" onmouseleave=close_list1()>
+                            <li><a href="#">Basic</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Sweaters</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Skirts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-list-item">
+                        <a href="#" class="btn nav-list-link" onmouseover="show_list2()">Men</a>
+                        <ul id="menList" class="menu label-text"  onmouseleave=close_list2()>
+                            <li><a href="#">Basic</a></li>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Polo Tees</a></li>
+                            <li><a href="#">Jackets&Sweaters</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+					</li>
+                    
+                    <li class="nav-list-item">
+                        <a href="#" class="btn nav-list-link" onmouseover="show_list3()">Girls</a>
+                        <ul id="girlList" class="menu label-text"  onmouseleave=close_list3()>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-list-item">
+                        <a href="#" class="btn nav-list-link" onmouseover="show_list4()">Boys</a>
+                        <ul id="boyList" class="menu label-text"  onmouseleave=close_list4()>
+                            <li><a href="#">Tees</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+            
+            <div class="nav-icon"> 
+                <div>
+                    <a href="#"><i class="fa-solid fa-heart fa-lg"></i></a>
+                    <span class="nav-text">12</span>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+                    <span class="nav-text">0</span>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-user fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<script src="dropdown.js"></script>
+</body>
+
+</html>
