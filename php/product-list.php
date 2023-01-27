@@ -54,7 +54,7 @@
                 while($row=$result->fetch(PDO::FETCH_ASSOC))
                 {
                     echo '<div class="card">';
-                        echo '<a href="product-details.php?'.$row['Product_Category'].'&'.$row['Product_Type'].'&'.$row['Product_Code'].'">';
+                        echo '<a href="product-details.php?Category='.$row['Product_Category'].'&Type='.$row['Product_Type'].'&ProCode='.$row['Product_Code'].'">';
                             echo '<img src="../assests/Products/'.$row['Product_Category'].'/'.$row['Product_Type'].'/'.$row['Product_Code'].'.jpg" alt="">';
                             echo '<div class="card-details">';
                                 echo '<p class="detail-name">'.$row['Product_Name'].'</p>';

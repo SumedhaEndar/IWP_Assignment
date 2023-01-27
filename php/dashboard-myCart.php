@@ -1,30 +1,33 @@
 <?php 
-    include 'session.inc.php';
+    include('session.inc.php');
 ?>
 
 <?php 
     require_once('config.inc.php');
 
-    function outputOrder()
+    function outputCart()
     {
         $CusID = $_SESSION['userID'];
 
-        try {
+        try{
             $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sql = "SELECT * FROM ordertable WHERE Cus_ID='$CusID'";
+            $sql = "SELECT * FROM cart WHERE Cus_ID='$CusID'";
             $result = $pdo->query($sql);
 
             while($row = $result->fetch(PDO::FETCH_ASSOC))
             {
+                $ProCode = $row['Product_Code'];
                 echo '<div class="dashboard-item-container">';
-                        outputProductInfo($row['Product_Code']);
-                    echo '<div class="dashboard-item-qty">';
-                        echo '<p class="dashboard-text-1">Qty: 1</p>';
+                        outputProductInfo($ProCode);
+                    echo '<div class="with-remove">';
+                        echo '<p class="item-details-remove">';
+                            echo '<a href="?delCart&cartID='.$row['Cart_ID'].'"><i class="fa-solid fa-trash fa-lg"></i></a>';
+                        echo '</p>';
                     echo '</div>';
-                    echo '<div class="dashboard-item-info">';
-                        echo '<p class="dashboard-text-1 status1">Delivering</p>';
+                    echo '<div class="dashboard-item-check">';
+                        echo '<a href="?addOrder&cartID='.$row['Cart_ID'].'">Pay</a>';
                     echo '</div>';
                 echo '</div>';
             }
@@ -32,7 +35,7 @@
         catch(PDOException $e)
         {
             die($e->getMessage());
-        }
+        }   
     }
 
     function outputProductInfo($productCode)
@@ -49,12 +52,69 @@
                 echo '<div class="dashboard-item-img">';
                     echo '<img src="../assests/Products/'.$row['Product_Category'].'/'.$row['Product_Type'].'/'.$row['Product_Code'].'.jpg" alt="">';
                 echo '</div>';
-                echo '<div class="dashboard-item-details">'; 
-                    echo '<h3 class="dashboard-text-1">'.$row['Product_Name'].'</h3>';
+                echo '<div class="dashboard-item-details hey">'; 
+                    echo '<h2 class="dashboard-text-1">'.$row['Product_Name'].'</h2>';
                 echo '</div>';
-                echo '<div class="dashboard-item-price">';
+                echo '<div class="dashboard-item-price2">';
                     echo '<p class="dashboard-text-1">RM'.$row['Product_Price'].'</p>';
                 echo '</div>';
+            }
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
+    function removeCart()
+    {
+        try{
+            if(isset($_GET['delCart']))
+            {
+                $cartID = $_GET['cartID'];
+
+                $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                
+                $sql = "DELETE FROM cart WHERE Cart_ID='$cartID'";
+                $result = $pdo->query($sql);
+
+                echo '<script>window.location.href="dashboard-myCart.php"</script>';
+            }
+        }
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
+
+    function addToOrder()
+    {
+        try{
+            if(isset($_GET['addOrder']))
+            {
+                $cartID = $_GET['cartID'];
+
+                $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                $sql = "SELECT * FROM cart WHERE Cart_ID='$cartID'";
+                $result = $pdo->query($sql);
+                $row = $result->fetch();
+
+                if($row)
+                {
+                    $ProCode = $row['Product_Code'];
+                    $CusID = $row['Cus_ID'];
+
+                    $sql = "INSERT INTO ordertable (Product_Code, Cus_ID) VALUES ('$ProCode', '$CusID')";
+                    $pdo->query($sql);
+
+                    $sql = "DELETE FROM cart WHERE Cart_ID='$cartID'";
+                    $pdo->query($sql);
+
+                    echo '<script>window.location.href="dashboard-myCart.php"</script>';
+                }
             }
         }
         catch(PDOException $e)
@@ -85,16 +145,20 @@
     <link rel="stylesheet" href="../css/dashboard-tabs.css">
     <link rel="stylesheet" href="../css/dashboard-SuM.css">
     <!----------------------------------------------------------------------------->
-    <title>IWP | My Orders</title>
+    <title>IWP | My Cart</title>
 </head>
 <body>
     <?php include("navbar.inc.php"); ?>
-
-    <?php include("dashboard-tabs.inc.php"); ?>
     
+    <?php include("dashboard-tabs.inc.php"); ?>
+
     <main class="dashboard-section">
         <section class="dashboard-container">
-            <?php outputOrder();?>
+            <?php 
+                outputCart();
+                removeCart();
+                addToOrder();
+            ?>
         </section>
     </main>
 

@@ -5,7 +5,7 @@
 <?php 
     require_once('config.inc.php');
 
-    function outputOrder()
+    function outputHistory()
     {
         $CusID = $_SESSION['userID'];
 
@@ -13,7 +13,7 @@
             $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sql = "SELECT * FROM ordertable WHERE Cus_ID='$CusID'";
+            $sql = "SELECT * FROM ordertable WHERE Cus_ID='$CusID' AND isShipped=1 LIMIT 10";
             $result = $pdo->query($sql);
 
             while($row = $result->fetch(PDO::FETCH_ASSOC))
@@ -24,7 +24,7 @@
                         echo '<p class="dashboard-text-1">Qty: 1</p>';
                     echo '</div>';
                     echo '<div class="dashboard-item-info">';
-                        echo '<p class="dashboard-text-1 status1">Delivering</p>';
+                        echo '<p class="dashboard-text-1 status2">Delivered</p>';
                     echo '</div>';
                 echo '</div>';
             }
@@ -94,7 +94,7 @@
     
     <main class="dashboard-section">
         <section class="dashboard-container">
-            <?php outputOrder();?>
+            <?php outputHistory();?>
         </section>
     </main>
 

@@ -143,7 +143,22 @@ table
     color:rgb(190, 22, 34);
 }
 
-button 
+.heart {
+    margin-left: 2rem;
+    color: aqua;
+}
+
+.heart:hover
+{
+    color: rgb(190, 22, 34);
+}
+
+.heart.active 
+{
+    color: rgb(190, 22, 34);
+}
+
+/* button 
 {
     background: #fff;
     border: unset;
@@ -190,4 +205,4 @@ button
 .like-button.liked::after 
 {
     transform: translate(-50%, -100%) scale(1.1);
-}
+} */

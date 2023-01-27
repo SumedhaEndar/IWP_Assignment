@@ -37,7 +37,7 @@
         <a href="admin-addEmployee.php">Add Employee</a>
         <a href="admin-productList.php">Product List</a>
         <a href="admin-addProduct.php">Add Product</a>
-        <a href="#">Order List</a>
+        <a href="admin-orderList.php">Order List</a>
         <a href="admin-feedbackList.php">Feedback List</a>
     </div>
 </aside>
