@@ -34,7 +34,7 @@
             <button class="tabs-text tabs-button" onclick="location.href='dashboard-myCart.php';">My Cart</button>
             <button class="tabs-text tabs-button" onclick="location.href='dashboard-myWishlist.php';">My Wishlist</button>
             <button class="tabs-text tabs-button" onclick="location.href='dashboard-myHistory.php';">My History</button>
-            <button class="tabs-text tabs-button">My Profile</button>
+            <button class="tabs-text tabs-button" onclick="location.href='dashboard-myProfile.php';">My Profile</button>
         </div>
     </div>
 </section>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-section {
+    background-color: var(--iwp-pink-1);
+    padding: 0.5rem 0 0.75rem 0;
+    min-height: 80vh;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Dashboard : My Orders - My History - My Wishlist - My History */
+.dashboard-item-container
+{
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter';
+    padding-left: 25px;
+}
+
+#save_profile_button
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(190,22,34);
+    color:white;
+    border: solid rgb(190,22,34) 1px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 15px;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form-control
+{
+    width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.form-control-1
+{
+    width: 35%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+#edit_button
+{
+    margin-top: 20px;
+    background-color: #00BFFF;
+    color:white;
+    border: solid #00BFFF;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 15px;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+}
+#change_pass_button
+{
+    margin-bottom: 20px;
+    background-color: #00BFFF;
+    color:white;
+    border: solid #00BFFF;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 15px;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* All */
+@media only screen and (max-width: 1190px) {
+    .dashboard-container {
+        width: 90%;
+    }
+
+    .dashboard-item-container
+    {
+        gap: 0.5rem;
+    }
+}

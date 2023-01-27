@@ -13,7 +13,7 @@
             $pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sql = "SELECT * FROM ordertable WHERE Cus_ID='$CusID'";
+            $sql = "SELECT * FROM ordertable WHERE Cus_ID='$CusID' AND isShipped=0";
             $result = $pdo->query($sql);
 
             while($row = $result->fetch(PDO::FETCH_ASSOC))
