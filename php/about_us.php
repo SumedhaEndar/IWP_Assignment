@@ -29,12 +29,12 @@
         <h1 class="heading-1" style="text-align: center; margin: 0; padding: 0.75rem 0;">Our Team</h1>
         <div class="container1">
             <div class="image-container">
-                <img src="../assests/sumedha.jpg" alt="Image 1" class="image-1">
+                <img src="../assests/sumedha1.jpg" alt="Image 1" class="image-1">
                 <p class="description-1">Sumedha Endar</p>
                 <p class="description-1">1211200546</p>
             </div>
             <div class="image-container">
-                <img src="../assests/dongyu.jpeg" alt="Image 2" class="image-1">
+                <img src="../assests/dongyu.jpg" alt="Image 2" class="image-1">
                 <p class="description-1">Tan Dong Yu</p>
                 <p class="description-1">1211200835</p>
             </div>

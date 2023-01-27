@@ -32,7 +32,7 @@
             <div class="footer-layout-1-sub2">
                 <h4 class="footer-heading">Information</h4>
                 <ul class="footer-text footer-list">
-                    <li class="footer-list-item"><a href="about.us.php" class="footer-list-link">About Us</a></li>
+                    <li class="footer-list-item"><a href="about_us.php" class="footer-list-link">About Us</a></li>
                     <li class="footer-list-item"><a href="contact-us.php" class="footer-list-link">Contact Us</a></li>
                 </ul>
             </div>
